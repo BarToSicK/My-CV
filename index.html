@@ -6,93 +6,106 @@
     content="IE=ende">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
+    <link href="style.css" rel="stylesheet">
 </head>
-<body>
-    <table>
-        <tr>
-            <td>
+    <body>
+        <div class="container">
+            <div class="info">
                 <img
-                    src="MyPhoto.jpg"
-                    alt="Photo"
-                    width="200px"
+                        id="avatar"
+                        src="MyPhoto.jpg"
+                        alt="Photo"
                 >
-            </td>
-            <td>
-                <h1>Никита Петренко</h1>
-                <p><em>Я основатель одноименного
-                    <strong>Youtube канала</strong></em></p>
-                <p>Я люблю путешествовать, заниматься
-                    спортом и программировать</p>
-            </td>
-        </tr>
-    </table>
+                <div class="info-text">
+                    <h1>Никита Петренко</h1>
+                    <p>Программист-самоучка.</p>
+                    <p>
+                        Я люблю программировать, заниматься
+                        спортом и испытывать себя в разных
+                        головоломках.
+                    </p>
 
-    <hr>
+                    <h4>Мои социальные сети</h4>
+                    <a href="https://t.me" target="_blank">Telegram</a>
+                    |
+                    <a href="https://vk.com/im" target="_blank">VK</a>
+                </div>
 
-    <h2>Мои социальные сети</h2>
-    <ul>
-        <li><a href="https://t.me" target="_blank">Telegram</a></li>
-        <li><a href="https://vk.com/im" target="_blank">VK</a></li>
-    </ul>
+            </div>
 
-    <hr>
+            <div class="card bg-yellow">
+                <h2>Мои хобби</h2>
+                <ol class="list">
+                    <li>Различные видео игры.</li>
+                    <li>Любой вид занятий, связанный с сборкой/разборкой (ПК, модели, конструктор, пазлы и т.д.)</li>
+                    <li>Спорт и различная активность.</li>
+                    <li>Посещение различных выставок, театров, музеев и т.д.</li>
+                </ol>
+            </div>
 
-    <h2>Мои хобби</h2>
-    <ol>
-        <li>Игры на Пк</li>
-        <li>Тренировки</li>
-        <li>Прогулки</li>
-        <li>Тусовки</li>
-    </ol>
+            <div class="card bg-green">
+            <h2>Опыт работы</h2>
+                <table class="table">
+                    <tr>
+                        <td>Bray Controls International</td>
+                        <td>Junior Frontend Developer</td>
+                        <td>08.2019-04.2020</td>
+                    </tr>
+                    <tr>
+                        <td>ГБПОУ ПК им. Н.Н. Годовикова</td>
+                        <td>Инженер-программист</td>
+                        <td>05.2020-06.2021</td>
+                    </tr>
+                    <tr>
+                        <td>Приемлемо</td>
+                        <td>Frontend Developer</td>
+                        <td>08.2021-12.2022</td>
+                    </tr>
+                </table>
+            </div>
 
-    <hr>
 
-    <h2>Опыт работы</h2>
-    <table>
-        <tr>
-            <th>Компания</th>
-            <th>Должность</th>
-            <th>Год</th>
-        </tr>
-        <tr>
-            <td>EPAM</td>
-            <td>Software Engineer</td>
-            <td>2020-2021</td>
-        </tr>
-        <tr>
-            <td>Software Outsorcing Services</td>
-            <td>Lead Frontend</td>
-            <td>2021-2022</td>
-        </tr>
-    </table>
+            <div class="card bg-red">
+                <h2>Пройденные курсы и полученные сертификаты</h2>
+                <ul class="link-list">
+                    <li>
+                        <a href="https://www.youtube.com/watch?v=H2GCkRF9eko&list=PL6DxKON1uLOFJ5_dDcX7G1osKnsBlCaaT">
+                            React & Node.js ИНТЕРНЕТ МАГАЗИН С НУЛЯ. PERN.
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/watch?v=GNrdg3PzpJQ&list=PL6DxKON1uLOFJ5_dDcX7G1osKnsBlCaaT&index=12">
+                            React JS фундаментальный курс от А до Я.
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
-    <hr>
+            <div class="contact">
+                <h2>Связаться со мной</h2>
 
-    <h2>Youtube курсы</h2>
-    <a href="youtube.html">Посмотреть список</a>
+                <form action="/">
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="name">Ваше имя:</label>
+                            <input type="text" id="name" placeholder="Введите ваше имя...">
+                        </div>
 
-    <hr>
+                        <div class="form-group">
+                            <label for="email">Ваш email:</label>
+                            <input type="email" id="email" placeholder="Введите email...">
+                        </div>
+                    </div>
 
-    <h2>Связаться со мной</h2>
+                    <div class="form-group">
+                        <label for="text">Ваше сообщение:</label>
+                        <br>
+                        <textarea id="text" rows="2" cols="15"></textarea>
+                    </div>
 
-    <form action="/">
-        <label for="name">Ваше имя:</label>
-        <input type="text" id="name" placeholder="Введите ваше имя...">
-
-        <br>
-
-        <label for="email">Ваш Email:</label>
-        <input type="email" id="email" placeholder="Введите email...">
-
-        <br>
-
-        <label for="text">Ваше сообщение:</label>
-        <br>
-        <textarea id="text" rows="2" cols="15"></textarea>
-
-        <br>
-
-        <input type="submit" value="Связаться!">
-    </form>
-</body>
+                    <input class="btn" type="submit" value="Связаться!">
+                </form>
+            </div>
+        </div>
+    </body>
 </html>
